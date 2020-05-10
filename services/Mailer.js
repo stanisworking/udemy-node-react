@@ -13,17 +13,9 @@ class Mailer extends helper.Mail {
         this.body = new helper.Content('text/html', content);
         this.recipients = this.formatAddresses(recipients);
 
-        console.log('>>> Test here 1');
-
         this.addContent(this.body);
-        console.log('>>> Test here 2');
-
         this.addClickTracking();
-
-        console.log('>>> Test here 3');
         this.addRecipients();
-
-        console.log('>>> Test here 4');
 
     }
 
